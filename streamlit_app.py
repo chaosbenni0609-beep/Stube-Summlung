@@ -17,11 +17,8 @@ st.write(list)
 st.write(list_without_first)
 
 User_in.append(st.slider("Frage 1 :",1,5,3))
-st.write(User_in)
 User_in.append(st.slider("Frage 2 :",1,5,3))
-st.write(User_in)
 User_in.append(st.slider("Frage 3 :",1,5,3))
-st.write(User_in)
 
 def vergleich(a,b):
     a = array(a,dtype=float)
