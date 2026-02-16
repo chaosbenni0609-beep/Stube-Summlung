@@ -13,8 +13,13 @@ result= con.query('SELECT * from tab;', ttl=600)
 
 for i in result : 
     list.append(i)
+
+# Create second list without first element of each tuple
+list_without_first = [i[1:] for i in list]
+
 print(result)
 print(list)
+print(list_without_first)
 
 
 #

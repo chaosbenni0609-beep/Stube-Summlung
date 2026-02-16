@@ -2,15 +2,20 @@ from numpy import *
 import streamlit as st
 from random import * 
 User_in = []
-ver1 = []
-ver2 = []
-ver3 = []
+ver1 = ["A"]
+ver2 = ["B"]
+ver3 = ["C"]
 list = [ver1,ver2,ver3]
 
 for i in range(3):
     ver1.append(randint(1,5))
     ver2.append(randint(1,5))
     ver3.append(randint(1,5))
+
+list_without_first = [i[1:] for i in list]
+st.write(list)
+st.write(list_without_first)
+
 User_in.append(st.slider("Frage 1 :",1,5,3))
 st.write(User_in)
 User_in.append(st.slider("Frage 2 :",1,5,3))
