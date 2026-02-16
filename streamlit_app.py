@@ -39,7 +39,7 @@ t = 0
 best_erg = 0 
 best_index = 0 
 for n in list:
-    erg = vergleich(User_in, list[t])
+    erg = vergleich(User_in, list_without_first[t])
     if erg > best_erg :
         best_erg = erg
         best_index = t
