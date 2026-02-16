@@ -47,5 +47,5 @@ for n in list:
 
 st.write(best_erg)
 st.write(best_index)
-st.write(list[best_index][0])
+st.write(list[best_index])
 
