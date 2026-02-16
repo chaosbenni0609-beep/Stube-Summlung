@@ -1,4 +1,4 @@
-
+from numpy import *
 import streamlit as st
 from random import * 
 User_in = []
