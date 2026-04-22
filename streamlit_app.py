@@ -36,6 +36,8 @@ User_in.append(st.slider("Ich koordiniere oder sortiere gerne",1,5,3))
 User_in.append(st.slider("Ich arbeite gerne von verschiedenen Orten",1,5,3))
 User_in.append(st.slider("Ich gehe/würde gerne oft auf Arbeitsreisen gehen",1,5,3))
 
+User_in_format = ','.join(User_in)
+
 st.write(User_in)
 
 
