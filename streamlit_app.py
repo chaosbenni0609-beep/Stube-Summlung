@@ -14,8 +14,6 @@ for i in range(31):
 
 
 list_without_first = [i[1:] for i in list]
-st.write(list)
-st.write(list_without_first)
 
 User_in.append(st.slider("Wie gerne arbeite ich in einem Labor?",1,5,3))
 User_in.append(st.slider("Wie gerne arbeite ich in einem Museum?",1,5,3))
