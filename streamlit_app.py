@@ -37,6 +37,6 @@ User_in.append(st.slider("Ich arbeite gerne von verschiedenen Orten",1,5,3))
 User_in.append(st.slider("Ich gehe/würde gerne oft auf Arbeitsreisen gehen",1,5,3))
 
 bitte = [User_in]
-st.write(bitte)
+st.write(User_in)
 
 
