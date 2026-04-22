@@ -2,18 +2,7 @@ from numpy import *
 import streamlit as st
 from random import * 
 User_in = []
-ver1 = ["A"]
-ver2 = ["B"]
-ver3 = ["C"]
-list = [ver1,ver2,ver3]
-
-for i in range(31):
-        ver1.append(randint(1,5))
-        ver2.append(randint(1,5))
-        ver3.append(randint(1,5))
-
-
-list_without_first = [i[1:] for i in list]
+User_in.append(st.chat_input("was ist dein beruf /studium/Ausbildung",))
 
 User_in.append(st.slider("Wie gerne arbeite ich in einem Labor?",1,5,3))
 User_in.append(st.slider("Wie gerne arbeite ich in einem Museum?",1,5,3))
@@ -47,29 +36,6 @@ User_in.append(st.slider("Ich koordiniere oder sortiere gerne",1,5,3))
 User_in.append(st.slider("Ich arbeite gerne von verschiedenen Orten",1,5,3))
 User_in.append(st.slider("Ich gehe/würde gerne oft auf Arbeitsreisen gehen",1,5,3))
 
+st.write(User_in)
 
-def vergleich(a,b):
-    a = array(a,dtype=float)
-    b = array(b,dtype=float)
-    test = dot(a,b)
-    # Step 2: Compute the magnitudes of the vectors
-    magnitude_A = linalg.norm(a)
-    magnitude_B = linalg.norm(b)
-    # Step 3: Calculate cosine similaritycosine_similarity = test2 / (magnitude_A * magnitude_C)
-    cos_similarity = test / (magnitude_A * magnitude_B)
-    return cos_similarity
-
-#noch anpassen 
-t = 0 
-best_erg = 0 
-best_index = 0 
-for n in list:
-    erg = vergleich(User_in, list_without_first[t])
-    if erg > best_erg :
-        best_erg = erg
-        best_index = t
-    t += 1
-
-st.write(best_erg)
-st.write(list[best_index])
 
