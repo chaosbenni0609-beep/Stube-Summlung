@@ -2,7 +2,7 @@ from numpy import *
 import streamlit as st
 from random import * 
 User_in = []
-User_in.append(st.text_input("was ist dein beruf /studium/Ausbildung",))
+Job = st.text_input("was ist dein beruf /studium/Ausbildung",)
 
 User_in.append(st.slider("Wie gerne arbeite ich in einem Labor?",1,5,3))
 User_in.append(st.slider("Wie gerne arbeite ich in einem Museum?",1,5,3))
@@ -36,7 +36,7 @@ User_in.append(st.slider("Ich koordiniere oder sortiere gerne",1,5,3))
 User_in.append(st.slider("Ich arbeite gerne von verschiedenen Orten",1,5,3))
 User_in.append(st.slider("Ich gehe/würde gerne oft auf Arbeitsreisen gehen",1,5,3))
 
-User_in_format = ','.join(User_in)
+User_in_format = Job + ','.join(User_in)
 
 st.write(User_in)
 
