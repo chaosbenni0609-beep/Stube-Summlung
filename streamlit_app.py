@@ -2,6 +2,7 @@ from numpy import *
 import streamlit as st
 from random import * 
 User_in = []
+st.write("Bei fragen mit Auswahl slider entspricht 1: ich stimme garnicht zu und 5:ich stimme voll zu  ")
 User_in.append(st.text_input("was ist dein studium/beruf/ausbildung"))
 
 User_in.append(st.slider("Wie gerne arbeite ich in einem Labor?",1,5,3))
